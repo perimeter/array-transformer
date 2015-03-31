@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+  bootstrap="./Tests/bootstrap.php"
+  backupGlobals="false"
+  backupStaticAttributes="false"
+  >
+  <testsuites>
+    <testsuite name="Array Transformer Test Suite">
+      <directory suffix="Test.php">./Tests</directory>
+    </testsuite>
+  </testsuites>
+  <filter>
+    <whitelist>
+      <directory>./</directory>
+      <exclude>
+        <directory>./Tests</directory>
+      </exclude>
+    </whitelist>
+  </filter>
+</phpunit>
